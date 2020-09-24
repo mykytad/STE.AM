@@ -85,9 +85,9 @@ h1 span{
 	position: relative;
 }
 .map_eventCard{
-	position: absolute;
+	/*position: absolute;
 	top:250px;
-	left:190px;
+	left:190px;*/
 	width: 300px;
 	background: #fff;
 	border-radius: 5px;
