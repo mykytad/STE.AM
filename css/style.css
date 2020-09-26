@@ -76,62 +76,82 @@ h1{
 h1 span{
 	font-weight: 900;
 }
+/*map*/
+	#map{
+		height: 475px;
+		background: gray;
+	}
+	.wrap>.container>.row{
+		height: 475px;
+		position: relative;
+	}
+	.map_eventCard{
+		position: absolute;
+		top:90px;
+		left:190px;
+		width: 300px;
+		background: #fff;
+		border-radius: 5px;
+	}
 
-.map{
-	height: 475px;
-	background: gray;
-}
-.map>.row{
-	position: relative;
-}
-.map_eventCard{
-	/*position: absolute;
-	top:250px;
-	left:190px;*/
-	width: 300px;
-	background: #fff;
-	border-radius: 5px;
-}
+	.eventCard_Pict{
+		width: 300px;
+	}
+	.map_eventCard h2{
+		font-size: 18px;
+		margin-top: 0;
+	}
+	.map_eventCard h3{
+		font-size: 14px;
+		color:#646464;
+	}
+	.map_eventCard p{
+		font-size: 12px;
+		color: #b9b9b9;
+	}
+	.map_eventCard_description{
+		position: relative;
+		width: 257px;
+		margin-top: 10px;
+		margin-left: 15px;
+		padding-bottom: 26px;
+	}
+	.map_eventCard_description:after{
+		content:"";
+		position: absolute;
+		bottom: 0;
+		right:50px;
+		width: 50px;
+		height: 50px;
+		color:#fff;
+		transform: skewX(45deg);
+	}
+	.map_description p{
+		position:absolute;
+		right: 0;
+		bottom: 0;
+		font-weight: 700;
+		width: 133px;
+		text-align: right;
+		color: #fe2232;
+		margin-left: 200px;
+	}
+	.map_description p span{
+		font-size: 48px;
+	}
 
-.eventCard_Pict{
-	width: 300px;
-}
-.map_eventCard h2{
-	font-size: 18px;
-	margin-top: 0;
-}
-.map_eventCard h3{
-	font-size: 14px;
-	color:#646464;
-}
-.map_eventCard p{
-	font-size: 12px;
-	color: #b9b9b9;
-}
-.map_eventCard_description{
-	position: relative;
-	width: 257px;
-	margin-top: 10px;
-	margin-left: 15px;
-	padding-bottom: 26px;
-}
-.map_eventCard_description:after{
-	content:"";
-	position: absolute;
-	bottom: 0;
-	right:50px;
-	width: 50px;
-	height: 50px;
-	color:#fff;
-	transform: skewX(45deg);
-}
-.map_description p{
-	font-weight: 700;
-	width: 133px;
-	text-align: right;
-	color: #fe2232;
-	margin-left: 200px;
-}
-.map_description p span{
-	font-size: 48px;
-}
+   .nav-pills>li>a{
+   		color:#b3b3b3;
+   		border-radius:0;
+   		border-bottom: 4px solid transparent;
+   		transition: all 0.5s ease;
+   }
+   .nav-pills>li>a:hover{
+   	background-color: transparent;
+   	border-bottom: 4px solid #fe2232;
+   }
+   .nav-pills>li.active>a ,.nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover{
+   		background-color: transparent;
+   		color:#000;
+   		border-bottom: 4px solid #fe2232;
+   }

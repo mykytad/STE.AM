@@ -56,24 +56,58 @@
 			</div>
 		</div>
 	</header>
-	<section class="map visible-lg-block">
-		<div class="container">
-			<div class="row">
-				<div class="map_eventCard">
-					<img src="img/act_big.png" alt="eventPict" class="eventCard_Pict">
-					<div class="map_eventCard_description">
-						<h2>Act Big! Ultimate Music Festival</h2>
-						<h3>Pattichion Municipal Amphitheater</h3>
-						<p>Nikolaou G. Dimitriou Street , Larnaca, 6031, Cyprus</p>
+	<section class="visible-lg-block" id="map">
+		<div class="wrap">
+			<div class="container">
+				<div class="row">
+					<div class="map_eventCard">
+						<img src="img/act_big.png" alt="eventPict" class="eventCard_Pict">
+						<div class="map_eventCard_description">
+							<h2>Act Big! Ultimate Music Festival</h2>
+							<h3>Pattichion Municipal Amphitheater</h3>
+							<p>Nikolaou G. Dimitriou Street , Larnaca, 6031, Cyprus</p>
+						</div>
 					</div>
-				</div>
-				<div class="map_description">
-					<p>
-						<span>9657</span> Global Live Events
-					</p>
+					<div class="map_description">
+						<p>
+							<span>9657</span> Global Live Events
+						</p>
+					</div>
 				</div>
 			</div>
 		</div>
 	</section>
+	<section class="container-fluid event">
+		<div class="container">
+			<div class="row">
+				<div class="hot_events">
+					<form>
+						<ul class="nav nav-pills col-md-3">
+						  <li role="presentation" class="active"><a href="#">Hot Events</a></li>
+						  <li role="presentation"><a href="#">Trending Events</a></li>
+						</ul>
+						<input type="text" class="col-md-5">
+						<input type="text" placeholder="Your location" class="col-md-4">
+					</form>
+				</div>
+			</div>
+		</div>		
+	</section>
+<script>
+			function initMap() {
+			  var opt = {
+			  	center:{lat:34.900404 , lng:33.623177},
+			  	zoom:12 
+			  };
+			  var map = new google.maps.Map(document.getElementById("map"),opt);
+			  var marker = new google.maps.Marker({
+			  	position: lat:34.900404 , lng:33.623177,
+			  	map: map
+			  })
+			}
+		 </script>
+		    <script defer
+			    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAVDumCs19i7VTG4mcEOKk21Aka42Pdo0M&callback=initMap">
+</script>
 </body>
 </html>
