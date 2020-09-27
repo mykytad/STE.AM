@@ -119,6 +119,7 @@ h1 span{
 	.map_eventCard_description:after{
 		content:"";
 		position: absolute;
+		z-index: 10;
 		bottom: 0;
 		right:50px;
 		width: 50px;
@@ -146,6 +147,7 @@ h1 span{
    		border-bottom: 4px solid transparent;
    		transition: all 0.5s ease;
    }
+/*event*/
    .nav-pills>li>a:hover{
    	background-color: transparent;
    	border-bottom: 4px solid #fe2232;
@@ -154,4 +156,53 @@ h1 span{
    		background-color: transparent;
    		color:#000;
    		border-bottom: 4px solid #fe2232;
+   }
+   .hot_events{
+   	padding-bottom: 46px;
+   }
+   .hot_events>form{
+	   	position: relative;
+	   	margin-top: 10px;
+   }
+   .hot_events>form:before{
+   		content: "";
+   		position: absolute;
+   		z-index: 10;
+   		right:130px;
+   		top:3px;
+   		width: 1px;
+   		height: 34px;
+   		background: #000;
+   		opacity: .05;
+   }
+   .hot_events>form:after{
+   		content: "";
+   		position: absolute;
+   		top:8px;
+   		right: 99px;
+   		width: 21px;
+   		height: 21px;
+   		background: url(../img/css_sprites.png);
+   		background-position: 260px -10px;
+   		cursor: pointer;
+   	}
+   .hot_events>form>input{
+	   	border:1px solid #d8d7d7 ;
+	   	background-color: #fdfdfd;
+	   	height: 40px;
+   }
+   .form_search{
+	   	/*width: 475px;*/
+	   	margin-right: 11px;
+   }
+   .form_location{
+   		/*width: 320px;*/
+   }
+   .calendar{
+	   	margin-left: -5px;
+	   	margin-right: -15px;
+   }
+   .list_events{
+   	background: #f4f4f4;
+   	margin-top: 40px;
    }
