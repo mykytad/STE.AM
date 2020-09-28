@@ -157,6 +157,9 @@ h1 span{
    		color:#000;
    		border-bottom: 4px solid #fe2232;
    }
+   .event{
+   	background: #f4f4f4;
+   }
    .hot_events{
    	padding-bottom: 46px;
    }
@@ -203,6 +206,60 @@ h1 span{
 	   	margin-right: -15px;
    }
    .list_events{
-   	background: #f4f4f4;
-   	margin-top: 40px;
+	   	/*background: #f4f4f4;*/
+	   	margin-top: 40px;
    }
+   .list_event_card{
+   	width: 348px;
+   	background: #fff;
+   	box-shadow: 0 1px 5px rgba(0, 0, 0, 0.08);
+   	border-radius: 5px;
+   }
+   .list_event_card_img{
+   		position: relative;
+   }
+   .list_event_card>div>div>img{
+   	width: 348px;
+   }
+   .list_event_card_img>img+p{
+	   	position: absolute;
+	   	bottom: 0;
+	   	left:49px;
+	   	font-size: 14px;
+	   	font-weight: 400;
+	   	color:#fff;
+   }
+   .list_event_card_img:before{
+   		content:"";
+   		position: absolute;
+   		bottom:0;
+   		width: 348px;
+   		height: 110px;
+		background-image: linear-gradient(to top, #000000 0%, rgba(23, 23, 23, 0) 87%, rgba(23, 23, 23, 0) 100%);
+	}
+	.list_event_card_description{
+		padding-left: 15px;
+	}
+	.list_event_card_description>h2{
+		font-size: 24px;
+		font-weight: 700;
+		color:#36393b;
+	}
+	.list_event_card_description>p{
+		font-size: 12px;
+		color:#b9b9b9;
+		width: 274px;
+		margin-bottom: 22px;
+	}
+	.list_event_card_description>p>span{
+		color: #646464;
+		font-size: 14px;
+	}
+	.list_event_card_description>p+p{
+		width: 310px;
+		height: 74px;
+		overflow: hidden;
+		color:#646464;
+		font-size: 14px;
+		line-height: 15px;
+	}
