@@ -207,13 +207,16 @@ h1 span{
    }
    .list_events{
 	   	/*background: #f4f4f4;*/
-	   	margin-top: 40px;
+	   	/*margin-top: 40px;*/
    }
    .list_event_card{
    	width: 348px;
    	background: #fff;
    	box-shadow: 0 1px 5px rgba(0, 0, 0, 0.08);
    	border-radius: 5px;
+   	margin-top:40px;
+   	margin-bottom: 46px;
+   	margin-right: 49px;
    }
    .list_event_card_img{
    		position: relative;
@@ -262,4 +265,43 @@ h1 span{
 		color:#646464;
 		font-size: 14px;
 		line-height: 15px;
+	}
+	.gender>div>div>div{
+		width: 172px;
+		background: #f7f7f7;
+	}
+	.gender>div>div>div>p{
+		position: relative;
+		padding-left: 70px;
+		margin-top: 18px;
+		width: 50px;
+		color:#d0d0d0;
+		font-size: 14px;
+		font-weight: 700;
+		text-transform: uppercase;
+		text-align:left;
+	}
+/*	.gender>div>div>div>p:before{
+		content: "";
+		position:absolute;
+		width: 19px;
+		height: 46px;
+		background: url(../img/css_sprites.png);
+		background-position: 200px -10px;
+	}*/
+	/*.female>p:before{
+		content: "";
+		width: 19px;
+		height: 46px;
+		background: url(../img/css_sprites.png);
+		background-position: 200px -10px;
+	}*/
+	.gender>div>div>div>p>span{
+		color:#36393b;
+		font-size: 32px;
+		letter-spacing: -0.64px;
+	}
+	.gender>div>div>div>p>span+span{
+		font-size: 18px;
+		letter-spacing:-.36px;
 	}
