@@ -266,11 +266,11 @@ h1 span{
 		font-size: 14px;
 		line-height: 15px;
 	}
-	.gender>div>div>div{
+	.gender>div>div{
 		width: 172px;
 		background: #f7f7f7;
 	}
-	.gender>div>div>div>p{
+	.gender>div>div>p{
 		position: relative;
 		padding-left: 70px;
 		margin-top: 18px;
@@ -279,7 +279,7 @@ h1 span{
 		font-size: 14px;
 		font-weight: 700;
 		text-transform: uppercase;
-		text-align:left;
+		/*text-align:left;*/
 	}
 /*	.gender>div>div>div>p:before{
 		content: "";
@@ -289,6 +289,9 @@ h1 span{
 		background: url(../img/css_sprites.png);
 		background-position: 200px -10px;
 	}*/
+	.female{
+		margin-left: 4px;
+	}
 	/*.female>p:before{
 		content: "";
 		width: 19px;
@@ -296,12 +299,12 @@ h1 span{
 		background: url(../img/css_sprites.png);
 		background-position: 200px -10px;
 	}*/
-	.gender>div>div>div>p>span{
+	.gender>div>div>p>span{
 		color:#36393b;
 		font-size: 32px;
 		letter-spacing: -0.64px;
 	}
-	.gender>div>div>div>p>span+span{
+	.gender>div>div>p>span+span{
 		font-size: 18px;
 		letter-spacing:-.36px;
 	}
