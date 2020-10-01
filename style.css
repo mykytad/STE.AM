@@ -1,0 +1,322 @@
+body{
+	font-family: 'Lato', sans-serif;
+	font-size: 16px;
+	color:#000;
+}
+.header{
+	background: #333;
+}
+.navbar-default{
+	background: transparent;
+    border: none;
+    font-weight: 700;
+    padding-top: 28px;
+}
+.navbar-brand {
+    padding: 0;
+    margin-right:274px;
+}
+.navbar-nav>.active>a{
+	background: none;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
+	color: red;
+    background: none;
+}
+.navbar-default .navbar-nav>li>a, .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover{
+	color:#a8a8a8;
+}
+.navbar-default .navbar-nav>li>a:hover{
+	color:#fff;
+	transition: all 0.5s ease;
+}
+.navbar-form{
+	padding-left: 0;
+    padding-top: 7px;
+    padding-right: 0;
+}
+.btn-link{
+	margin-right: 10px;
+    border: 1px solid #a7a7a7;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+}
+.navbar-default .btn-link:focus, .navbar-default .btn-link:hover{
+	color:#fff;
+	border: 1px solid #a7a7a7;
+    border-radius: 5px;
+    text-decoration: none;
+    background: #a7a7a7;
+}
+.btn-danger{
+	border:none;
+	background: #d9534f;
+	transition: all 0.5s ease;
+}
+.btn-danger:hover {
+    color: #fff;
+    background: #bc3e4b;
+}
+
+.navbar-collapse{
+	background: #333;
+	border-top:none;
+}
+
+.navbar-form{
+	background: #333;
+	border-top: none;
+	border-bottom: none;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+h1{
+	text-align: center;
+	color:#fff;
+	font-weight: 300;
+	font-size: 38px;
+	padding-bottom: 43px;
+	margin-bottom: 0;
+}
+h1 span{
+	font-weight: 900;
+}
+/*map*/
+	#map{
+		height: 475px;
+		background: gray;
+	}
+	.wrap>.container>.row{
+		height: 475px;
+		position: relative;
+	}
+	.map_eventCard{
+		position: absolute;
+		top:90px;
+		left:190px;
+		width: 300px;
+		background: #fff;
+		border-radius: 5px;
+	}
+
+	.eventCard_Pict{
+		width: 300px;
+	}
+	.map_eventCard h2{
+		font-size: 18px;
+		margin-top: 0;
+	}
+	.map_eventCard h3{
+		font-size: 14px;
+		color:#646464;
+	}
+	.map_eventCard p{
+		font-size: 12px;
+		color: #b9b9b9;
+	}
+	.map_eventCard_description{
+		position: relative;
+		width: 257px;
+		margin-top: 10px;
+		margin-left: 15px;
+		padding-bottom: 26px;
+	}
+	.map_eventCard_description:after{
+		content:"";
+		position: absolute;
+		z-index: 10;
+		bottom: 0;
+		right:50px;
+		width: 50px;
+		height: 50px;
+		color:#fff;
+		transform: skewX(45deg);
+	}
+	.map_description p{
+		position:absolute;
+		right: 0;
+		bottom: 0;
+		font-weight: 700;
+		width: 133px;
+		text-align: right;
+		color: #fe2232;
+		margin-left: 200px;
+	}
+	.map_description p span{
+		font-size: 48px;
+	}
+
+   .nav-pills>li>a{
+   		color:#b3b3b3;
+   		border-radius:0;
+   		border-bottom: 4px solid transparent;
+   		transition: all 0.5s ease;
+   }
+/*event*/
+   .nav-pills>li>a:hover{
+   	background-color: transparent;
+   	border-bottom: 4px solid #fe2232;
+   }
+   .nav-pills>li.active>a ,.nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover{
+   		background-color: transparent;
+   		color:#000;
+   		border-bottom: 4px solid #fe2232;
+   }
+   .event{
+   	background: #f4f4f4;
+   }
+   .hot_events{
+   	padding-bottom: 46px;
+   }
+   .hot_events>form{
+	   	position: relative;
+	   	margin-top: 10px;
+   }
+   .hot_events>form:before{
+   		content: "";
+   		position: absolute;
+   		z-index: 10;
+   		right:130px;
+   		top:3px;
+   		width: 1px;
+   		height: 34px;
+   		background: #000;
+   		opacity: .05;
+   }
+   .hot_events>form:after{
+   		content: "";
+   		position: absolute;
+   		top:8px;
+   		right: 99px;
+   		width: 21px;
+   		height: 21px;
+   		background: url(../img/css_sprites.png);
+   		background-position: 260px -10px;
+   		cursor: pointer;
+   	}
+   .hot_events>form>input{
+	   	border:1px solid #d8d7d7 ;
+	   	background-color: #fdfdfd;
+	   	height: 40px;
+   }
+   .form_search{
+	   	/*width: 475px;*/
+	   	margin-right: 11px;
+   }
+   .form_location{
+   		/*width: 320px;*/
+   }
+   .calendar{
+	   	margin-left: -5px;
+	   	margin-right: -15px;
+   }
+   .list_events{
+	   	/*background: #f4f4f4;*/
+	   	/*margin-top: 40px;*/
+   }
+   .list_event_card{
+   	background: #fff;
+   	box-shadow: 0 1px 5px rgba(0, 0, 0, 0.08);
+   	border-radius: 5px;
+   /*	margin-top:40px;
+   	margin-bottom: 46px;
+   	margin-right: 40px;*/
+   }
+   .list_event_card_img{
+   		position: relative;
+   }
+   .list_event_card_img>img{
+   	width: 100%;
+   }
+   .list_event_card_img>img+p{
+	   	position: absolute;
+	   	bottom: 0;
+	   	left:49px;
+	   	font-size: 14px;
+	   	font-weight: 400;
+	   	color:#fff;
+   }
+   .list_event_card_img:before{
+   		content:"";
+   		position: absolute;
+   		bottom:0;
+   		width: 100%;
+   		height: 110px;
+		background-image: linear-gradient(to top, #000000 0%, rgba(23, 23, 23, 0) 87%, rgba(23, 23, 23, 0) 100%);
+	}
+	.list_event_card_description{
+		padding-left: 15px;
+	}
+	.list_event_card_description>h2{
+		font-size: 24px;
+		font-weight: 700;
+		color:#36393b;
+	}
+	.list_event_card_description>p{
+		font-size: 12px;
+		color:#b9b9b9;
+		width: 274px;
+		margin-bottom: 22px;
+	}
+	.list_event_card_description>p>span{
+		color: #646464;
+		font-size: 14px;
+	}
+	.list_event_card_description>p+p{
+		width: 310px;
+		height: 74px;
+		overflow: hidden;
+		color:#646464;
+		font-size: 14px;
+		line-height: 15px;
+	}
+	.gender>div>div{
+		background: #f7f7f7;
+	}
+	.gender>div>div>p{
+		position: relative;
+		padding-left: 70px;
+		margin-top: 18px;
+		width: 50px;
+		color:#d0d0d0;
+		font-size: 14px;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+/*	.gender>div>div>div>p:before{
+		content: "";
+		position:absolute;
+		width: 19px;
+		height: 46px;
+		background: url(../img/css_sprites.png);
+		background-position: 200px -10px;
+	}*/
+	.female{
+		position: relative;
+	}
+	/*.female>p:before{
+		content: "";
+		width: 19px;
+		height: 46px;
+		background: url(../img/css_sprites.png);
+		background-position: 200px -10px;
+	}*/
+	.female:after{
+		content:"";
+		position:absolute;
+		right:100%;
+		top:calc(50% - 45px);
+		width: 2px;
+		height: 90px;
+		background: #fff;
+
+	}
+	.gender>div>div>p>span{
+		color:#36393b;
+		font-size: 32px;
+		letter-spacing: -0.64px;
+	}
+	.gender>div>div>p>span+span{
+		font-size: 18px;
+		letter-spacing:-.36px;
+	}
