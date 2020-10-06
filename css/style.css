@@ -13,9 +13,11 @@ body{
     padding-top: 28px;
 }
 .navbar-brand {
-    float: left;
-    height: auto;
     padding: 0;
+    margin-right:274px;
+}
+.navbar-nav>.active>a{
+	background: none;
 }
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
 	color: red;
@@ -29,7 +31,9 @@ body{
 	transition: all 0.5s ease;
 }
 .navbar-form{
-	padding: 0;
+	padding-left: 0;
+    padding-top: 7px;
+    padding-right: 0;
 }
 .btn-link{
 	margin-right: 10px;
@@ -72,6 +76,7 @@ h1{
 	font-weight: 300;
 	font-size: 38px;
 	padding-bottom: 43px;
+	margin-bottom: 0;
 }
 h1 span{
 	font-weight: 900;
@@ -129,7 +134,7 @@ h1 span{
 	}
 	.map_description p{
 		position:absolute;
-		right: 0;
+		right: 18px;
 		bottom: 0;
 		font-weight: 700;
 		width: 133px;
@@ -159,9 +164,6 @@ h1 span{
    }
    .event{
    	background: #f4f4f4;
-   }
-   .hot_events{
-   	padding-bottom: 46px;
    }
    .hot_events>form{
 	   	position: relative;
@@ -206,23 +208,23 @@ h1 span{
 	   	margin-right: -15px;
    }
    .list_events{
-	   	/*background: #f4f4f4;*/
+	   	background: #f4f4f4;
 	   	/*margin-top: 40px;*/
    }
    .list_event_card{
-   	width: 348px;
    	background: #fff;
    	box-shadow: 0 1px 5px rgba(0, 0, 0, 0.08);
    	border-radius: 5px;
-   	margin-top:40px;
+   	margin-top: 40px;
+   /*	margin-top:40px;
    	margin-bottom: 46px;
-   	margin-right: 40px;
+   	margin-right: 40px;*/
    }
    .list_event_card_img{
    		position: relative;
    }
-   .list_event_card>div>div>img{
-   	width: 348px;
+   .list_event_card_img>img{
+   	width: 100%;
    }
    .list_event_card_img>img+p{
 	   	position: absolute;
@@ -236,7 +238,7 @@ h1 span{
    		content:"";
    		position: absolute;
    		bottom:0;
-   		width: 348px;
+   		width: 100%;
    		height: 110px;
 		background-image: linear-gradient(to top, #000000 0%, rgba(23, 23, 23, 0) 87%, rgba(23, 23, 23, 0) 100%);
 	}
@@ -266,11 +268,10 @@ h1 span{
 		font-size: 14px;
 		line-height: 15px;
 	}
-	.gender>div>div{
-		width: 172px;
+	.gender-type{
 		background: #f7f7f7;
 	}
-	.gender>div>div>p{
+	.gender-type>p{
 		position: relative;
 		padding-left: 70px;
 		margin-top: 18px;
@@ -279,17 +280,18 @@ h1 span{
 		font-size: 14px;
 		font-weight: 700;
 		text-transform: uppercase;
+	}	
+	.gender-type>p>span{
+		color:#36393b;
+		font-size: 32px;
+		letter-spacing: -0.64px;
 	}
-/*	.gender>div>div>div>p:before{
-		content: "";
-		position:absolute;
-		width: 19px;
-		height: 46px;
-		background: url(../img/css_sprites.png);
-		background-position: 200px -10px;
-	}*/
+	.gender-type>p>span+span{
+		font-size: 18px;
+		letter-spacing:-.36px;
+	}
 	.female{
-		margin-left: 4px;
+		position: relative;
 	}
 	/*.female>p:before{
 		content: "";
@@ -298,12 +300,20 @@ h1 span{
 		background: url(../img/css_sprites.png);
 		background-position: 200px -10px;
 	}*/
-	.gender>div>div>p>span{
-		color:#36393b;
-		font-size: 32px;
-		letter-spacing: -0.64px;
+	.female:after{
+		content:"";
+		position:absolute;
+		right:100%;
+		top:calc(50% - 45px);
+		width: 2px;
+		height: 90px;
+		background: #fff;
 	}
-	.gender>div>div>p>span+span{
-		font-size: 18px;
-		letter-spacing:-.36px;
+	/*.row-with-large-margin{
+		margin-left: -25px;
+		margin-right: -25px;
 	}
+	.col-with-large-padding{
+		padding-left: 25px;
+		padding-right: 25px;
+	}*/
