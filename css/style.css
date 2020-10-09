@@ -14,7 +14,6 @@ body{
 }
 .navbar-brand {
     padding: 0;
-    margin-right:274px;
 }
 .navbar-nav>.active>a{
 	background: none;
@@ -343,15 +342,10 @@ h1 span{
 		padding-top: 40px;
 		padding-bottom:31px ;
 	}
-	.footer_menu:before{
-		content:"";
-		position: absolute;
-		bottom: 0;
-		left:calc(50% - 575px);
+	.stick{
 		height: 1px;
-		width:1150px;
 		background-color: #3e3e3e;
-		box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.23);
+		box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.23)
 	}
 	.footer_menu_list{
 		list-style-type: none;
@@ -388,7 +382,19 @@ h1 span{
 		font-weight: 700;
 		color:#fff;
 	}
-	.sosial a{
-		width:16px;
+	.sosial_list{
+		list-style: none;
+		display: inline-block;
+	}
+	.sosial_list>li{	
+		margin-left: 26px;
+		background: url(../img/css_sprites.png);
+		width: 17px;
 		height: 17px;
+	}
+	.sosial_list>li>a{
+		display: block;
+	}
+	.sosial_list>li .facebook{
+		background-position: 0 0 ;
 	}
