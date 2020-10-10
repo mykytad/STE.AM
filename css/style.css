@@ -172,7 +172,7 @@ h1 span{
    		content: "";
    		position: absolute;
    		z-index: 10;
-   		right:100px;
+   		right:14%;
    		top:3px;
    		width: 1px;
    		height: 34px;
@@ -183,7 +183,7 @@ h1 span{
    		content: "";
    		position: absolute;
    		top:8px;
-   		right: 70px;
+   		right: 10%;
    		width: 21px;
    		height: 21px;
    		background: url(../img/css_sprites.png);
@@ -261,15 +261,24 @@ h1 span{
 		font-size: 14px;
 	}
 	.list_event_card_description>p+p{
-		width: 310px;
 		height: 74px;
 		overflow: hidden;
 		color:#646464;
 		font-size: 14px;
 		line-height: 15px;
 	}
-	.gender-type{
+	.gender{
+		position: relative;
 		background: #f7f7f7;
+	}
+	.gender:before{
+		content: "";
+		position: absolute;
+		background: #fff;
+		left: 50%;
+		top:calc(50% - 46px);
+		width: 3px;
+		height: 92px;
 	}
 	.gender-type>p{
 		position: relative;
@@ -290,8 +299,17 @@ h1 span{
 		font-size: 18px;
 		letter-spacing:-.36px;
 	}
-	.female{
+	.male{
+		display: inline-block;
+		width: 172px;
 		position: relative;
+		margin-left: 15px;
+	}
+	.female{
+		display: inline-block;
+		width: 172px;
+		position: relative;
+		margin-left: 13px;
 	}
 	/*.female>p:before{
 		content: "";
@@ -300,7 +318,7 @@ h1 span{
 		background: url(../img/css_sprites.png);
 		background-position: 200px -10px;
 	}*/
-	.female:after{
+	/*.female:after{
 		content:"";
 		position:absolute;
 		right:100%;
@@ -308,7 +326,7 @@ h1 span{
 		width: 2px;
 		height: 90px;
 		background: #fff;
-	}
+	}*/
 	/*.row-with-large-margin{
 		margin-left: -25px;
 		margin-right: -25px;
