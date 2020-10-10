@@ -29,6 +29,9 @@ body{
 	color:#fff;
 	transition: all 0.5s ease;
 }
+.navbar-brand{
+	margin-right: 289px;
+}
 .navbar-form{
 	padding-left: 0;
     padding-top: 7px;
@@ -300,33 +303,37 @@ h1 span{
 		letter-spacing:-.36px;
 	}
 	.male{
+		position: relative;
 		display: inline-block;
 		width: 172px;
-		position: relative;
 		margin-left: 15px;
 	}
+	.male:before{
+		content: "";
+		position: absolute;
+		left: 24px;
+		top: calc(50% - 23px);
+		width: 25px;
+		height: 50px;
+		background: url(../img/css_sprites.png);
+		background-position: 304px -10px;
+	}
 	.female{
+		position: relative;
 		display: inline-block;
 		width: 172px;
-		position: relative;
 		margin-left: 13px;
 	}
-	/*.female>p:before{
+	.female:before{
 		content: "";
-		width: 19px;
-		height: 46px;
+		position: absolute;
+		left: 24px;
+		top: calc(50% - 23px);
+		width: 25px;
+		height: 50px;
 		background: url(../img/css_sprites.png);
-		background-position: 200px -10px;
-	}*/
-	/*.female:after{
-		content:"";
-		position:absolute;
-		right:100%;
-		top:calc(50% - 45px);
-		width: 2px;
-		height: 90px;
-		background: #fff;
-	}*/
+		background-position: 218px -10px;
+	}
 	/*.row-with-large-margin{
 		margin-left: -25px;
 		margin-right: -25px;
@@ -419,7 +426,7 @@ h1 span{
 
 
 
-
+/*media*/
 	@media (max-width: 1199px) {
     .navbar-header {
         float: none;
