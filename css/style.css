@@ -345,10 +345,7 @@ h1 span{
 	}*/
 	.my_button{
 		margin-top: 32px;
-		margin-bottom: 47px;
-		padding-top: 14px;
-		padding-bottom: 15px;
-		text-align: center;		
+		margin-bottom: 47px;		
 		border: 1px solid #e4e4e4;
 		background-color: #f8f8f8;
 		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.18), inset 0 0 0 1px rgba(255, 255, 255, 0.22);
@@ -356,6 +353,14 @@ h1 span{
 	.load_button{
 		display: block;
 		color: #8e9498;
+		/*height: 52px;*/
+		padding-top: 14px;
+		padding-bottom: 15px;
+		text-align: center;
+		transition: all 0.5s ease;		
+	}
+	.load_button:hover{
+		color: #d9534f;
 	}
 /*footer*/
 	.footer{
@@ -412,17 +417,36 @@ h1 span{
 		list-style: none;
 		display: inline-block;
 	}
-	.sosial_list>li{	
+	.sosial_list>li{
+		display: inline-block;	
 		margin-left: 26px;
 		background: url(../img/css_sprites.png);
 		width: 17px;
 		height: 17px;
 	}
+	.sosial_list>li>.clearfix{
+		background: none;
+	}
 	.sosial_list>li>a{
 		display: block;
 	}
-	.sosial_list>li .facebook{
-		background-position: 0 0 ;
+	.sosial_list .facebook{
+		background-position:-2px -10px;
+	}
+	.sosial_list .twitter{
+		background-position:-63px -10px;
+	}
+	.sosial_list .linkedin{
+		background-position:-99px -10px;
+	}
+	.sosial_list .youtube{
+		background-position:-33px -10px;
+	}
+	.sosial_list .social_link{
+		background-position:-169px -10px;
+	}
+	.sosial_list .rss{
+		background-position:-134px -10px;
 	}
 
 
