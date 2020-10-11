@@ -246,6 +246,29 @@ h1 span{
    		height: 110px;
 		background-image: linear-gradient(to top, #000000 0%, rgba(23, 23, 23, 0) 87%, rgba(23, 23, 23, 0) 100%);
 	}
+	.list_event_card_img_date{
+		position: relative;
+	}
+	.list_event_card_img_date:before{
+		content: "";
+		position:absolute;
+		right: 105%;
+		top:calc(50% - 13px);
+		width: 26px;
+		height: 26px;
+		background-image: url(../img/css_sprites.png);
+		background-position: -327px -10px;
+	}
+	.list_event_card_img_date:after{
+		content: "";
+		position:absolute;
+		left:115%;
+		top:calc(50% - 13px);
+	    width: 30px;
+	    height: 30px;
+	    background-image: url(../img/css_sprites.png);
+	    background-position: -463px -10px;
+	}
 	.list_event_card_description{
 		padding-left: 15px;
 	}
@@ -364,16 +387,19 @@ h1 span{
 	}
 /*footer*/
 	.footer{
+		text-align: center;
 		background:#333;
 		color: #a8a8a8;
 		font-size: 14px;
 	}
 	.footer_menu{
+		text-align: center;
 		position:relative;
 		padding-top: 40px;
 		padding-bottom:31px ;
 	}
 	.stick{
+		margin-top: 20px;
 		height: 1px;
 		background-color: #3e3e3e;
 		box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.23)
