@@ -127,13 +127,12 @@ h1 span{
 	.map_eventCard_description:after{
 		content:"";
 		position: absolute;
-		z-index: 10;
-		bottom: 0;
-		right:50px;
-		width: 50px;
-		height: 50px;
-		color:#fff;
-		transform: skewX(45deg);
+		bottom: -12px;
+		right:20px;
+		width: 40px;
+		height: 40px;
+		background:#fff;
+		transform: skewY(52deg);
 	}
 	.map_description p{
 		position:absolute;
@@ -448,14 +447,11 @@ h1 span{
 		display: inline-block;	
 		margin-left: 26px;
 		background: url(../img/css_sprites.png);
-		width: 17px;
-		height: 17px;
-	}
-	.sosial_list>li>.clearfix{
-		background: none;
 	}
 	.sosial_list>li>a{
 		display: block;
+		width: 17px;
+		height: 17px;
 	}
 	.sosial_list .facebook{
 		background-position:-2px -10px;
