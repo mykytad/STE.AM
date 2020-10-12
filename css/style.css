@@ -87,13 +87,12 @@ h1 span{
 /*map*/
 	#map{
 		height: 475px;
-		background: gray;
 	}
-	.wrap>.container>.row{
-		height: 475px;
+	.wrap>.container>.row {
 		position: relative;
 	}
 	.map_eventCard{
+		z-index: 10;
 		position: absolute;
 		top:90px;
 		left:190px;
