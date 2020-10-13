@@ -94,7 +94,7 @@ h1 span{
 	.map_eventCard{
 		z-index: 10;
 		position: absolute;
-		top:90px;
+		top:-400px;
 		left:190px;
 		width: 300px;
 		background: #fff;
