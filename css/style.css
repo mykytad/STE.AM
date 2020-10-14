@@ -14,7 +14,10 @@ body{
 }
 .navbar-brand {
     padding: 0;
-    margin-left: 0;
+    margin-left: 0 !important ;
+}
+.navbar-nav{
+	margin-left: 270px;
 }
 .navbar-nav>.active>a{
 	background: none;
@@ -225,13 +228,18 @@ h1 span{
    .list_event_card_img>img{
    	width: 100%;
    }
-   .list_event_card_img>img+p{
+   .list_event_card_img>img+div{
 	   	position: absolute;
 	   	bottom: 0;
-	   	left:49px;
+	   	left:0;
 	   	font-size: 14px;
 	   	font-weight: 400;
 	   	color:#fff;
+	   	display: flex;
+   }
+   .list_event_card_img>img+div{
+   	/*display: flex;*/
+
    }
    .list_event_card_img:before{
    		content:"";
@@ -243,8 +251,22 @@ h1 span{
 	}
 	.list_event_card_img_date{
 		position: relative;
+		margin-left: 15px;
 	}
-	.list_event_card_img_date:before{
+	.circle_facebook{
+		height: 30px;
+		width: 30px;
+		background-image: url(../img/css_sprites.png);
+		background-position: -327px -10px;
+	}
+	.heart{
+		height: 30px;
+		width: 30px;
+		margin-left: 30px;
+		background-image: url(../img/css_sprites.png);
+	    background-position: -463px -10px;
+	}
+	/*.list_event_card_img_date:before{
 		content: "";
 		position:absolute;
 		right: 105%;
@@ -263,7 +285,7 @@ h1 span{
 	    height: 30px;
 	    background-image: url(../img/css_sprites.png);
 	    background-position: -463px -10px;
-	}
+	}*/
 	.list_event_card_description{
 		padding-left: 15px;
 	}
@@ -357,11 +379,11 @@ h1 span{
 	/*.row-with-large-margin{
 		margin-left: -25px;
 		margin-right: -25px;
-	}
+	}*/
 	.col-with-large-padding{
 		padding-left: 25px;
 		padding-right: 25px;
-	}*/
+	}
 	.my_button{
 		margin-top: 32px;
 		margin-bottom: 47px;		
