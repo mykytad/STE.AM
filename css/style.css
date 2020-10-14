@@ -170,42 +170,51 @@ h1 span{
 	   	position: relative;
 	   	margin-top: 10px;
    }
-   .hot_events>form:before{
+   .form_search{
+   		padding-left: 15px;
+	   	/*width: 470px;*/
+	   	margin-right: 11px;
+   }
+   .form_search{
+   		border:1px solid #d8d7d7 ;
+	   	background-color: #fdfdfd;
+	   	height: 40px;
+	   	width: 100%;
+   }
+   .wrap_form_location{
+   	position: relative;
+   }
+   .wrap_form_location:before{
    		content: "";
    		position: absolute;
    		z-index: 10;
-   		right:14%;
+   		right:55px;
    		top:3px;
    		width: 1px;
    		height: 34px;
    		background: #000;
    		opacity: .05;
    }
-   .hot_events>form:after{
-   		content: "";
+    .wrap_form_location:after{
+    	content: "";
    		position: absolute;
    		top:8px;
-   		right: 10%;
+   		right: 27px;
    		width: 21px;
    		height: 21px;
    		background: url(../img/css_sprites.png);
    		background-position: 260px -10px;
    		cursor: pointer;
-   	}
-   .hot_events>form>input{
-	   	border:1px solid #d8d7d7 ;
+    }
+   .form_location{
+   		position: relative;
+   		padding-left: 15px;
+   		border:1px solid #d8d7d7 ;
 	   	background-color: #fdfdfd;
 	   	height: 40px;
+	   	width: 100%;
    }
-   .form_search{
-   		padding-left: 15px;
-	   	/*width: 470px;*/
-	   	margin-right: 11px;
-   }
-   .form_location{
-   		padding-left: 15px;
-   		/*width: 320px;*/
-   }
+   
    .calendar{
    		margin-left: 10px;
    }
@@ -262,7 +271,7 @@ h1 span{
 	.heart{
 		height: 30px;
 		width: 30px;
-		margin-left: 25px;
+		margin-left: 10px;
 		background-image: url(../img/css_sprites.png);
 	    background-position: -463px -10px;
 	}
