@@ -231,7 +231,7 @@ h1 span{
    .list_event_card_img>img+div{
 	   	position: absolute;
 	   	bottom: 0;
-	   	left:0;
+	   	left:5px;
 	   	font-size: 14px;
 	   	font-weight: 400;
 	   	color:#fff;
@@ -262,7 +262,7 @@ h1 span{
 	.heart{
 		height: 30px;
 		width: 30px;
-		margin-left: 30px;
+		margin-left: 25px;
 		background-image: url(../img/css_sprites.png);
 	    background-position: -463px -10px;
 	}
@@ -320,39 +320,40 @@ h1 span{
 		position: absolute;
 		background: #fff;
 		left: 50%;
-		top:calc(50% - 46px);
+		top:calc(50% - 40px);
 		width: 3px;
-		height: 92px;
+		height: 80px;
 	}
-	.gender-type>p{
+	.gender-type{
 		position: relative;
 		padding-left: 70px;
-		margin-top: 18px;
+		margin-top: 15px;
 		width: 50px;
 		color:#d0d0d0;
 		font-size: 14px;
 		font-weight: 700;
 		text-transform: uppercase;
 	}	
-	.gender-type>p>span{
-		color:#36393b;
+	.genter-type>span {
+		 color:#36393b;
+		 font-size: 18px;
+	 	letter-spacing:-.36px;
+	}
+	.gender-type .percent{	
+		color: #36393b;
 		font-size: 32px;
 		letter-spacing: -0.64px;
 	}
-	.gender-type>p>span+span{
-		font-size: 18px;
-		letter-spacing:-.36px;
-	}
+
+	.gender-type .percent small { 
+        font-size: 18px;
+	 }
 	.male{
-		position: relative;
-		display: inline-block;
-		width: 172px;
-		margin-left: 15px;
 	}
 	.male:before{
 		content: "";
 		position: absolute;
-		left: 24px;
+		left: 40px;
 		top: calc(50% - 23px);
 		width: 25px;
 		height: 50px;
@@ -360,16 +361,11 @@ h1 span{
 		background-position: 304px -10px;
 	}
 	.female{
-		position: relative;
-		display: inline-block;
-		text-align: left;
-		/*width: 172px;*/
-		margin-left: 13px;
 	}
 	.female:before{
 		content: "";
 		position: absolute;
-		left: 24px;
+		left: 40px;
 		top: calc(50% - 23px);
 		width: 25px;
 		height: 50px;
@@ -530,3 +526,6 @@ h1 span{
         overflow: hidden!important;
     }
 }
+
+
+col-xs-offset-0 col-sm-offset-0 col-lg-offset-0 col-xs-12 col-sm-6 col-md-5 col-lg-4 col-with-large-padding
