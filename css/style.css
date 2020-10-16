@@ -91,8 +91,13 @@ h1 span{
 	.wrap>.container>.row {
 		position: relative;
 	}
+	.map_eventCard_hidden{
+		display:none;
+	}
+	.map_eventCard_visible{
+		display:inline-block;
+	}
 	.map_eventCard{
-		z-index: 10;
 		position: absolute;
 		top:-400px;
 		left:190px;
@@ -535,6 +540,6 @@ h1 span{
         overflow: hidden!important;
     }
 }
-
-
-col-xs-offset-0 col-sm-offset-0 col-lg-offset-0 col-xs-12 col-sm-6 col-md-5 col-lg-4 col-with-large-padding
+@media (min-width: 768px){
+	
+}

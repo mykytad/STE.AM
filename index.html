@@ -57,7 +57,7 @@
 		<div class="wrap">
 			<div class="container">
 				<div class="row">
-					<div class="map_eventCard">
+					<div class="map_eventCard map_eventCard_hidden" id="card">
 						<img src="img/act_big.png" alt="eventPict" class="eventCard_Pict">
 						<div class="map_eventCard_description">
 							<h2>Act Big! Ultimate Music Festival</h2>
@@ -715,11 +715,17 @@
 	</footer>
 <script>
 function initMap() {
-  var uluru = {lat: 34.912324, lng: 33.598738};
-  var map = new google.maps.Map(
-      document.getElementById('map'), {zoom: 13, center: uluru});
-  var marker = new google.maps.Marker({position: uluru, map: map});
-}
+ 	var uluru = {lat: 34.912324, lng: 33.598738};
+ 	var map = new google.maps.Map(
+    	document.getElementById('map'), {zoom: 13, center: uluru});
+ 	var marker = new google.maps.Marker({position: uluru, map: map});
+	};
+	$('#map').focusin(function(){
+		$('.map_eventCard').fadeIn()
+	});
+	$('#map').focusout(function(){
+		$('.map_eventCard').fadeOut()
+	});
     </script>
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBA-ETaMw-Uk4iXTJkM7ps2wlI6zJp_UiE&callback=initMap">
