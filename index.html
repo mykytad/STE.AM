@@ -719,13 +719,29 @@ function initMap() {
  	var map = new google.maps.Map(
     	document.getElementById('map'), {zoom: 13, center: uluru});
  	var marker = new google.maps.Marker({position: uluru, map: map});
-	};
-	$('#map').focusin(function(){
-		$('.map_eventCard').fadeIn()
-	});
-	$('#map').focusout(function(){
-		$('.map_eventCard').fadeOut()
-	});
+ 		var contentString =
+		 	'<div id="card" style="border-radius:5px; overflow-y:hidden;">'+
+		 	'<img src="img/act_big.png" alt="eventPict" class="eventCard_Pict" style="">'+
+		 	'<div id="card_description">'+
+		 	'<h2 style="font-size:18px;">Act Big! Ultimate Music Festival</h2>'+
+		 	'<h3 style="font-size:14px; color:#646464;">Pattichion Municipal Amphitheater</h3>'+
+		 	'<p style="font-size:12px; color:#b9b9b9;">Nikolaou G. Dimitriou Street , Larnaca, 6031, Cyprus</p>'+
+		 	'</div>'+
+		 	'</div>';
+		  var infowindow = new google.maps.InfoWindow({
+		    content: contentString,
+		    maxHight:300,
+		  });
+		  var marker = new google.maps.Marker({
+		    position: uluru,
+		    map,
+		    title: "Uluru (Ayers Rock)",
+		  });
+		  marker.addListener("click", () => {
+		    infowindow.open(map, marker);
+		  });
+};
+
     </script>
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBA-ETaMw-Uk4iXTJkM7ps2wlI6zJp_UiE&callback=initMap">

@@ -83,6 +83,7 @@ h1{
 }
 h1 span{
 	font-weight: 900;
+
 }
 /*map*/
 	#map{
@@ -543,3 +544,13 @@ h1 span{
 @media (min-width: 768px){
 	
 }
+
+/**/
+
+/*	var infowindow = new google.maps.InfoWindow({
+	   content: .map_eventCard,
+	   maxWidth: 400
+	});
+		marker.addListener('click', function() {
+		infowindow.open(map, marker);
+	});*/
