@@ -720,7 +720,7 @@ function initMap() {
     	document.getElementById('map'), {zoom: 13, center: uluru});
  	var marker = new google.maps.Marker({position: uluru, map: map});
  		var contentString =
-		 	'<div id="card" style="border-radius:5px; overflow-y:hidden;">'+
+		 	'<div id="card" style="">'+
 		 	'<img src="img/act_big.png" alt="eventPict" class="eventCard_Pict" style="">'+
 		 	'<div id="card_description">'+
 		 	'<h2 style="font-size:18px;">Act Big! Ultimate Music Festival</h2>'+
@@ -730,7 +730,6 @@ function initMap() {
 		 	'</div>';
 		  var infowindow = new google.maps.InfoWindow({
 		    content: contentString,
-		    maxHight:300,
 		  });
 		  var marker = new google.maps.Marker({
 		    position: uluru,

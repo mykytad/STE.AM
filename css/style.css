@@ -105,6 +105,7 @@ h1 span{
 		width: 300px;
 		background: #fff;
 		border-radius: 5px;
+		overflow: hidden;
 	}
 
 	.eventCard_Pict{
@@ -499,6 +500,11 @@ h1 span{
 	}
 	.sosial_list .rss{
 		background-position:-134px -10px;
+	}
+	.gm-style-iw-d{
+		border-radius:5px; 
+		max-height:330px !important;
+		overflow:none;
 	}
 
 
